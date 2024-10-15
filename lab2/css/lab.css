@@ -1,8 +1,8 @@
 h1 {
-  color: orange;
+  color: rgb(21, 0, 255);
   font-size: 200%;
   font-family:Georgia, 'Times New Roman', Times, serif;
-  
+
 }
 
 p { 
@@ -12,10 +12,15 @@ p {
 }
 
 #content {
-   background-color: #cccccc
-   width: 500px;
+   background-color: #b86262
+   width: 1420px;
    min-height: 300px;
    padding;  10px;
    margin: 10px;
 border: solid 1px #444444;
 font-size: 20px;
+}
+
+my-portrait{
+  width: 200px; height: 200px;
+}
