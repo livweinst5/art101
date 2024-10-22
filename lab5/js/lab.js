@@ -15,10 +15,10 @@ age = 2019 - year;
 
 // output
 document.writeln("Make: " + make + "<br>");
-document.writeln("Model: " + make + "<br>");
-document.writeln("Color: " + make + "<br>");
-document.writeln("Year: " + make + "<br>");
-document.writeln("Age: " + make + " years<br>");
+document.writeln("Model: " + model + "<br>");
+document.writeln("Color: " + color + "<br>");
+document.writeln("Year: " + year + "<br>");
+document.writeln("Age: " + age + " years<br>");
 
 // Constants
 
