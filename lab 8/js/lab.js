@@ -1,40 +1,29 @@
-// index.js - Lab 6: Arrays and Objects
+// index.js - Lab 8: Anon Functions and Callbacks
 // Author: Liv Weinstein <osweinst@ucsc.edu>
-// Date: 24 october
+// Date: 31 october
 
-// Define Variables
-myTransport = ["Toyata Prius Three, Train, Bike"];
 
-// create an object for my main ride
-myMainRide = { 
-    make: "Prius",
-    model: "Toyata Prius Three",
-    color: "Grey",
-    year: 2016,
-    // we can define a function within our object (called a method)
-    // that uses the value of year above (using this.year)
-    age : function () {
-      return 2023 - this.year;
-    }
+
+function oddWay(x){
+      return (x-2 == 0);
+    
   }
 
-// output
-document.writeln("Kinds of transportation I use: ", myTransport,"</br>");
-// this little trick allows us to write an object to the document
-document.writeln("My Main Ride: <pre>",
-     JSON.stringify(myMainRide, null, '\t'), "</pre>");
-//Constanta
+//test function
+console.log("Is 1 even? ", oddWay(1));
+console.log("Is 2 even? ", oddWay(2));
 
-//Functions
-function myFunction(param1,param2) {
-  // some code here
-  // return results;
-}
+array = [100, 27, 14, 26, 400]
+console.log("My array", array);
 
-function Main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
+var result = array.map(oddWay);
+//should return [false, false, false, false, false, false]
+console.log("Test of evenness of array;", result);
 
-// let's get this party started
-main();
+var result = array.map(function(x){
+    return x ** 0.13;
+
+})
+
+// should return [1.8197008586099834, 1.534890115649325, 1.5196102039986283, 1.4092779102900412, 1.5273780154814814824, 2.1790530269622352]
+console.log("squareroot of array:", result);
