@@ -26,4 +26,4 @@ var result = array.map(function(x){
 })
 
 // should return [1.8197008586099834, 1.534890115649325, 1.5196102039986283, 1.4092779102900412, 1.5273780154814814824, 2.1790530269622352]
-console.log("squareroot of array:", result);
+console.log("Squareroot of array:", result);
