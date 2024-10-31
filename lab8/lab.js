@@ -5,9 +5,9 @@
 
 
 function oddWay(x){
-      return (x-2 == 0);
+ return (x-2 == 0);
     
-  }
+}
 
 //test function
 console.log("Is 1 even? ", oddWay(1));
