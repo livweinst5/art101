@@ -1,40 +1,38 @@
-// index.js - Lab 6: Arrays and Objects
+// index.js - Lab 7: Functions
 // Author: Liv Weinstein <osweinst@ucsc.edu>
 // Date: 24 october
 
-// Define Variables
-myTransport = ["Toyata Prius Three, Train, Bike"];
 
-// create an object for my main ride
-myMainRide = { 
-    make: "Prius",
-    model: "Toyata Prius Three",
-    color: "Grey",
-    year: 2016,
-    // we can define a function within our object (called a method)
-    // that uses the value of year above (using this.year)
-    age : function () {
-      return 2023 - this.year;
-    }
-  }
-
-// output
-document.writeln("Kinds of transportation I use: ", myTransport,"</br>");
-// this little trick allows us to write an object to the document
-document.writeln("My Main Ride: <pre>",
-     JSON.stringify(myMainRide, null, '\t'), "</pre>");
-//Constanta
+//Constants
 
 //Functions
+
+//sortUserName- a function that takes user input and sorts the letters
+//of their name
+function sortUserName() {
+  var userName = window.prompt("Hi. Please tell me your name so I can fix it.");
+  console.log("userName =", nameArray);
+  //Note that I could have done that above lines as a single line:
+  //userName. toLower(. split ("").sort()join("")
+  return nameSorted;
+
+
+}
+
+//output
+document.writeln("oh hey,I've fixed your name:",
+      sortUserName(), "</b>");
 function myFunction(param1,param2) {
-  // some code here
-  // return results;
+  //some code here
+  //return results;
 }
 
 function Main() {
   console.log("Main function started.");
-  // the code that makes everything happen
+  //the code that makes everything happen
 }
 
-// let's get this party started
+// lets get this party started
 main();
+
+
