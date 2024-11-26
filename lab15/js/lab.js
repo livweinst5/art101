@@ -16,7 +16,7 @@ $("#Activate").click(function(){
 })
     // get data via ajax from numberspai
     // Using the core $.ajac() method
-    $.ajac({
+    $.ajax({
       // The URL for the request
       url: "https://yesno.wtf/api",
     // The data to send (will be conerted to a query string)
@@ -33,6 +33,6 @@ $("#Activate").click(function(){
  $("#output").append("<img src='" + data.image + "'>")
 })
 // If the request fails
-.fail(function( xhr, status, errorThrown) {
+.fail(function( xhr, status, errorThrown){
   console.log(errorThrown + " Status:" + status );
 })
