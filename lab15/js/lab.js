@@ -34,5 +34,5 @@ $("#Activate").click(function(){
 })
 // If the request fails
 .fail(function( xhr, status, errorThrown) {
-  console.log(errorThrown + " status:" + status );
+  console.log(errorThrown + " Status:" + status );
 })
