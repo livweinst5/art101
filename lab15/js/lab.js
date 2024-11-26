@@ -15,7 +15,7 @@
 $("#Activate").click(function(){
 })
     // get data via ajax from numberspai
-    // Using the core $.ajax() method
+    // Using the core $.ajac() method
     $.ajac({
       // The URL for the request
       url: "https://yesno.wtf/api",
@@ -24,10 +24,10 @@ $("#Activate").click(function(){
        // Whether this is a POST or GET request
        type: "GET",
        // The typre of data we expect back
-       dataType : "Json",
+       dataType : "json",
     })
  // If the request succeeds
- .done(function( date ) {
+ .done(function( data ) {
   console.log(data);
  $("#output").append("<h1>" + data.answer);
  $("#output").append("<img src='" + data.image + "'>")
